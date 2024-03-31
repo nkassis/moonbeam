@@ -20,9 +20,9 @@
 	 (json-data (json-encode `(("model" . "gpt-3.5-turbo")
                                           ("messages" . 
                                            ((("role" . "system")
-                                             ("content" . "You are programming assistant that write simple programs in racket"))
+                                             ("content" . "You are programming assistant that write simple programs in emacs lisp"))
 					    (("role" . "system")
-                                             ("content" . "Only return the racket code and not other content around it. No instructions or decorators"))
+                                             ("content" . "Only return the elisp code and not other content around it. No instructions or decorators"))
                                             (("role" . "user")
                                              ("content" . ,text)))))))
          (url-request-data (encode-coding-string json-data 'utf-8))
