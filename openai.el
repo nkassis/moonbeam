@@ -24,7 +24,7 @@
 					    (("role" . "system")
                                              ("content" . "Only return the racket code and not other content around it. No instructions or decorators"))
                                             (("role" . "user")
-                                             ("content" . ,(buffer-string))))))))
+                                             ("content" . ,text)))))))
          (url-request-data (encode-coding-string json-data 'utf-8))
          (url "https://api.openai.com/v1/chat/completions"))
     (url-retrieve url #'my-handle-api-response (list (current-buffer)))))
@@ -49,7 +49,8 @@
 	(unless (bolp) ; Check if the point is at the beginning of a line.
           (insert "\n")) ; If not, insert a new line first.
 	(insert content)
-        (goto-char (point-min))))))
+	(deactivate-mark)
+        (goto-char (point-max))))))
 
 
 (defun my-send-region-to-chatgpt ()
