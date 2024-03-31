@@ -1,0 +1,79 @@
+# Emacs temporary files
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Projectile files
+.projectile
+
+# Bookmarks
+.bookmarks.el
+
+# Byte-compiled files
+*.elc
+
+# Undo-tree history
+undo-tree-history/
+
+# Directory variables
+.dir-locals.el
+
+# Custom file
+custom.el
+
+# Org-mode
+*.org-id-locations
+*_archive
+
+# Cask packages
+.cask/
+dist/
+
+# ELPY
+.elpy/
+
+# Flycheck
+flycheck_*.el
+
+# ESK
+*starter-kit*
+
+# eshell files
+.eshell/
+
+# acd files
+.acd-session.el
+
+# session files
+.session
+.session.*
+
+# Recent files
+.recentf
+
+# Auto-save files
+*~
+
+# Auto-save list files
+auto-save-list/
+
+# Compiled source files
+*.elc
+
+# Package archives
+elpa/
+
+# TAGS files
+TAGS
+
+# Network security data
+/network-security.data
+
+# Persp-confs
+persp-confs/
+
